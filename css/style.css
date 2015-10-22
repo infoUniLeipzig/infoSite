@@ -50,6 +50,7 @@ button {
 }
 body {
 	font-family: "calibri", "times";
+	height: 100%;
 	background: #C8DEE8;
 }
 a:link {
