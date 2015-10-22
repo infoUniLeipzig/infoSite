@@ -6,7 +6,7 @@ var algoDataPage = $.trim($('#algoDataTemp').html());
 var modProgPage = $.trim($('#modProgTemp').html());
 var techInfPage = $.trim($('#techInfTemp').html());
 
-console.log(window.location.hash);
+route();
 function route() {
 	console.log(window.location.hash);
 	var hash = window.location.hash;
