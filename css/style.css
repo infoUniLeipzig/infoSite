@@ -67,10 +67,6 @@ a:active {
 
 /* DAS GESTALTEN BEGINNT HIER */
 /* DAS GESTALTEN BEGINNT HIER */
-
-.buttonLink:a {
-	color: white;
-}
 .navIco {
 	display: table-cell;
 	height: 50px;

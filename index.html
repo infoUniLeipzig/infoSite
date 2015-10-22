@@ -6,29 +6,51 @@
 	</head>
 	<body>
 		<nav>
-			<button id="analy" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html/#analysis'">
+			<button id="home" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#'">
+				Home
+			</button>
+			<button id="analy" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#analysis'">
 				Analysis
 			</button>
-			<button id="diskS" class="navIco">
+			<button id="diskS" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#diskreteStrukturen'">
 				DisStruk
 			</button>
-			<button id="algoDatas" class="navIco">
+			<button id="algoDatas" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#algoundDaten'">
 				AlgoData
 			</button>
-			<button id="modProg" class="navIco">
+			<button id="modProg" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#modeundProgra'">
 				ModProg
 			</button>
-			<button id="techInfo" class="navIco">
+			<button id="techInfo" class="navIco" onclick="window.location='file:///C:/Users/Robert/Documents/Aptana%20Studio%203%20Workspace/infoSite/index.html#techInform'">
 				TechInf
 			</button>
 		</nav>
 		<div style="margin: 0 3% 0 3%;" id="contentFrame">
-			<!-- <h1 class="cText" style="margin-top: 5%; font-size: 2em;">Willkommen auf einer Schwachsinnigen Seite</h1>
+			<h1 class="cText" style="margin-top: 5%; font-size: 2em;">Willkommen auf einer Schwachsinnigen Seite</h1>
 			<h2 class="cText" style="margin-top: 8%; font-size: 1.2em;">Das ist die Seite um beim Informatik Bacholoriot, den Überblick zumindest halbwegs zu bewahren.</h2>
 			<p style="margin-top: 9%">
 			Hier finden sie gebündelt: Vorlesungs Scripts, Übungs Blätter und infos Welche Übungsblätter Abgegeben werden müssen, welche nicht und wo... Vor der Vorlesung nach der Vorlesung bis 23.55Uhr Moodle, Olat, oder ob diese der Deutschenbotschaft permail und oder mit rückversandmarke per Express oder nicht gesendet werden müssen.... .
-			</p> -->
+			</p>
 		</div>
+		<script id="homeTemp" type="template">
+			<h1 class="cText" style="margin-top: 5%; font-size: 2em;">Willkommen auf einer Schwachsinnigen Seite</h1>
+			<h2 class="cText" style="margin-top: 8%; font-size: 1.2em;">Das ist die Seite um beim Informatik Bacholoriot, den Überblick zumindest halbwegs zu bewahren.</h2>
+			<p style="margin-top: 9%">
+			Hier finden sie gebündelt: Vorlesungs Scripts, Übungs Blätter und infos Welche Übungsblätter Abgegeben werden müssen, welche nicht und wo... Vor der Vorlesung nach der Vorlesung bis 23.55Uhr Moodle, Olat, oder ob diese der Deutschenbotschaft permail und oder mit rückversandmarke per Express oder nicht gesendet werden müssen.... .
+			</p>
+		</script>
+		<script id="disStrukTemp" type="template">
+			<p>disStruk</p>
+		</script>
+		<script id="algoDataTemp" type="template">
+			<p>algo</p>
+		</script>
+		<script id="modProgTemp" type="template">
+			<p>progran</p>
+		</script>
+		<script id="techInfTemp" type="template">
+			<p>technick</p>
+		</script>
 		<script id="analyTemp" type="template">
 			<div id="analyLoad">
 			<h2>Analysis für Informatiker und Lehramt Mathematik</h2>
@@ -89,5 +111,6 @@
 			</p>
 			</div>
 		</script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
