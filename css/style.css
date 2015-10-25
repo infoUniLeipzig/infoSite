@@ -1,45 +1,31 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 button {
 	margin: 0;
@@ -54,16 +40,16 @@ body {
 	background: #C8DEE8;
 }
 a:link {
-    color: #D85B00;
+	color: #D85B00;
 }
 a:visited {
-    color: #909090;
+	color: #909090;
 }
 a:hover {
-    color: #003FB5;
+	color: #003FB5;
 }
 a:active {
-    color: #003FB5;
+	color: #003FB5;
 }
 
 /* DAS GESTALTEN BEGINNT HIER */
@@ -75,9 +61,9 @@ a:active {
 	color: white;
 	background: #247DA9;
 	-webkit-transition: 0.5s; /* Safari */
-    transition: 0.5s;
+	transition: 0.5s;
 }
-.navIco:hover{
+.navIco:hover {
 	color: black;
 	background: rgb(154, 184, 199);
 }
@@ -98,11 +84,69 @@ h3 {
 nav {
 	display: flex;
 	position: relative;
+	top: 0;
 	height: 50px;
 	width: 100%;
-	background: red;
 }
 .cText {
 	text-align: center;
+}
+#menuToggle {
+	position: absolute;
+	font-size: 2em;
+	font-weight: bold;
+}
+.actionToggle {
+	text-align: right;
+	min-height: 50px;
+	background: rgba(200, 222, 232, 0);
+	right: -1.4em;
+	transition: 0.5s;
+}
+.actionToggle-open {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	background: rgba(200, 222, 232, 0);
+	right: 0em;
+	color: white;
+}
+#contentFrame {
+	margin: 0 3% 0 3%;
+}
+.topMargin {
+	margin-top: 0px;
+}
+@media (max-width: 810px) {
+	.topMargin {
+		margin-top: 50px;
+	}
+	#contentFrame {
+		margin: 50px 3% 0 3%;
+	}
+	nav {
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		background: #247DA9;
+		transition: 0.5s;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	.navMenuTrans {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.navIco {
+		display: block;
+		height: auto;
+		min-height: 50px;
+		width: 100%;
+		color: white;
+		background: #247DA9;
+		-webkit-transition: 0.5s; /* Safari */
+		transition: 0.5s;
+		border-bottom: solid white 1px;
+	}
 }
 

@@ -31,3 +31,24 @@ function route() {
 		break;
 	}
 }
+
+// Toggle menu!
+var toggle = false;
+$( "#menuToggle" ).click(function() {
+	if (toggle == false) {
+		$( "#navMenu" ).addClass( "navMenuTrans" );
+		$( "#menuToggle" ).addClass( "actionToggle-open" );
+		toggle = true;
+	} else {
+		$( "#navMenu" ).removeClass( "navMenuTrans" );
+		$( "#menuToggle" ).removeClass( "actionToggle-open" );
+		toggle = false;
+	}
+});
+$( "#contentFrame" ).click(function() {
+	if (toggle == true) {
+		$( "#navMenu" ).removeClass( "navMenuTrans" );
+		$( "#menuToggle" ).removeClass( "actionToggle-open" );
+		toggle = false;
+	}
+});
