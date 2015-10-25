@@ -5,6 +5,7 @@ var disStrukPage = $.trim($('#disStrukTemp').html());
 var algoDataPage = $.trim($('#algoDataTemp').html());
 var modProgPage = $.trim($('#modProgTemp').html());
 var techInfPage = $.trim($('#techInfTemp').html());
+var impressumPage = $.trim($('#impressumTemp').html());
 
 route();
 function route() {
@@ -28,6 +29,9 @@ function route() {
 		break;
 		case '#techInform':
 		document.getElementById("contentFrame").innerHTML = techInfPage;
+		break;
+		case '#impressum':
+		document.getElementById("contentFrame").innerHTML = impressumPage;
 		break;
 	}
 }
