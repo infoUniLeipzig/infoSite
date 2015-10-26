@@ -36,6 +36,7 @@ function route() {
 	}
 }
 
+
 // Toggle menu!
 var toggle = false;
 $( "#menuToggle" ).click(function() {
