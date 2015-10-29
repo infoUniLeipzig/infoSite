@@ -9,7 +9,6 @@ var impressumPage = $.trim($('#impressumTemp').html());
 
 route();
 function route() {
-	console.log(window.location.hash);
 	var hash = window.location.hash;
 	switch(hash) {
 		case '':
